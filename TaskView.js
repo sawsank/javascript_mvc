@@ -86,11 +86,11 @@ TaskView.prototype={
         var index=0;
         for(var task in tasks){
             if(tasks[task].taskStatus=='completed'){
-                html +="<div style="color:green;">";
+                html +='<div style="color:green;">';
             }else{
                 html +="<div>";
             }
-            $tasksContainer.append(html +"<label> <input type="checkbox" class="js-task" data-index="" +index+"" data-task-selected="false">" +task[task].taskName +"</label></div>");
+            $tasksContainer.append(html +'<label> <input type="checkbox" class="js-task" data-index="" +index+"" data-task-selected="false">" +task[task].taskName +"</label></div>');
             index++;
         }
     },
